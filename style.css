@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+}
+body{
+    background: whitesmoke;
+    text-decoration: none;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    background-color: whitesmoke;
+}
+h1{
+    position: absolute;
+    padding: 2rem ;
+    margin-left: 6rem;
+    font-weight: bold;
+    font-size: 2.8rem; 
+}
+.header{
+    position: fixed;
+    width: 100%;
+    padding: 2rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.header.sticky{
+    border-bottom: none;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: black;
+    margin-left: 3rem;
+    transform: .3s;
+
+}
+.backvd{
+    z-index: -1;
+    width: 100%;
+}
+.heading1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+span{
+    color: orange;
+}
+ .event-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+.event-lay h3{
+    color: #000000;
+    font-size: 3rem
+}
+.events-cont .events-box{
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem orangered;
+    overflow: hidden;
+    display: flex;
+}
+.events-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+.events-box:hover img{
+    transform: scale(1.1);
+}
+.events-box .event-lay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1),#ff4500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    
+}
+.events-box .event-lay{
+    transform: translateY(0);
+}
